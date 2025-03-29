@@ -1,0 +1,346 @@
+
+@media screen and (min-width: 512px){
+    
+}
+
+.center{
+    display: block;
+    justify-self: center;
+}
+
+a{
+    color: rgb(33, 60, 50);
+    padding: 0%;
+    text-decoration: none;
+}
+
+a::selection{
+    color: rgb(33, 60, 50);
+}
+
+a:hover{
+    color: rgb(33, 60, 50);
+    text-decoration: underline;
+}
+
+.logo{
+    margin: 3%;
+}
+
+.logo:hover{
+    zoom: 94%;
+    margin-left: 3.2%;
+    margin-right: 3.2%;
+}
+
+.topphoto{
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.topbar{
+    display: block;
+    position:sticky;
+    top: 0%;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    text-align: left;
+    background-color:rgb(60, 132, 100);
+    width: 100%;
+    z-index: 0;
+    font-size: 38px;
+    opacity: 95%;
+    color: rgb(33, 60, 50);
+    border: 3px,rgb(60, 132, 100),solid;
+    border-left-color: rgb(33, 60, 50);
+    border-right-color: rgb(33, 60, 50);
+    justify-self: center;
+}
+
+.sidebar{
+    position:fixed;
+    right: 0px;
+    z-index: 1;
+    top:4px;
+}
+
+.bar{
+    background-color:rgb(60, 132, 100);
+    right: 1%;
+    z-index: 1;
+    padding: 5px;
+    color: ivory;
+    font-size: 20px;
+    width: max-content;
+    text-align: right;
+    margin-right:10px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    line-height: 50%;
+    opacity: 105%;
+    border: 0px,rgb(33, 60, 50),double;
+    border-bottom-width: 3px;
+}
+
+.bigger{
+    opacity:0%;
+    height: 45px;
+    font-size: 43px;
+    margin-top:2.5%;
+    margin-right:18px;
+}
+
+.smaller{
+    height:32px;
+    padding-top: 2px;
+}
+
+.sidelogo{
+    position: absolute;
+    right:8px;
+    height: 30px;
+    margin-top:5px;
+}
+
+.upbutton{
+    background: none;
+    border-style: hidden;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.upbutton:hover{
+    text-decoration: overline;
+}
+
+.homebutton{
+    background: none;
+    border-style: hidden;
+}
+
+.homebutton:hover{
+    opacity: 80%;
+}
+
+.quickbutton{
+    background-color: rgb(60, 132, 100, 0.95);
+    border-style: hidden;
+    text-decoration: overline;
+    color:ivory;
+    font-size: clamp(22px,6vw,26px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 1vh;
+    padding-top: 6px;
+    width: 24%;
+    margin-right: -4.1px;
+    margin-bottom: 1vh;
+}
+
+.quickbutton:hover{
+    background-color: rgb(60, 132, 100, 0.75);
+    text-decoration:none;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+}
+
+.quickbutton:active{
+    color:rgb(129, 192, 164);
+}
+
+.sidebutton{
+    background: none;
+    border-style: hidden;
+    color: ivory;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 12px;
+    margin-bottom: 1px;
+}
+
+.sidebutton:hover{
+    text-decoration: underline;
+    color: rgb(129, 192, 164);
+}
+
+.sidebutton:active{
+    margin-left: 0px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: rgb(33, 60, 50);
+    width: 96%;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(129, 192, 164);
+    text-align: center;
+    padding:2%;
+    margin-top: 2%;
+}
+
+.drop{
+    background-color: ivory;
+    color: rgb(33, 60, 50);
+    padding: 1%;
+    width: clamp(250px,75%,400px);
+    justify-self: center;
+    font-weight: bold;
+    z-index: -1;
+    font-size: 24px;
+    margin: 1%;
+}
+
+.drop:hover{
+    width: clamp(275px,85%,450px);
+    text-decoration: overline;
+}
+
+.drop:active{
+    color: rgb(60, 132, 100);
+}
+
+.biglogo{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    justify-content:center;
+}
+
+.bigcap{
+    color:ivory;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 25px;
+    font-family:cursive;
+    font-style: italic;
+    max-width: 512px;
+    margin: auto;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+th{
+    font-style:italic;
+}
+
+td{
+    font-weight:bold;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.white{
+    border-style: hidden;
+    display: block;
+    justify-self: center;
+    max-width: 512px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(240, 255, 240, 0.95);
+    color: rgb(37, 83, 62);
+    margin: 1%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.dark{
+    border-style: hidden;
+    display: block;
+    justify-self: center;
+    max-width: 512px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(37, 83, 62, 0.95);
+    color: ivory;
+    margin: 1%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.light{
+    border-style: hidden;
+    display: block;
+    justify-self: center;
+    max-width: 512px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(129, 192, 164, 0.95);
+    color: rgb(33, 60, 50);
+    margin: 1%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.order{
+    display: block;
+    color: ivory;
+    background-color:rgb(60, 132, 100);
+    z-index: 1;
+    min-width: fit-content;
+    font-family:cursive;
+    font-size: 30px;
+    position: sticky;
+    bottom: 1%;
+    padding: 2%;
+    margin: 0%;
+    float: left;
+    right: 5%;
+    border: 3px, dashed, rgb(33, 60, 50);
+    opacity: 95%;
+}
+
+.order:hover{
+    opacity: 100%;
+    font-size: 32px;
+}
+
+.white:active{
+    background-color:rgba(240, 255, 240, 0.8);
+}
+
+.dark:active{
+    background-color:rgba(37, 83, 62,0.8);
+}
+
+.light:active{
+    background-color: rgb(129, 192, 164,0.8);
+}
+
+.white:hover{
+    border: none,5px,rgb(129, 192, 164,0.8);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom-style: groove;
+    border-top-style: ridge;
+}
+
+.dark:hover{
+    border: none,5px,rgb(33, 60, 50);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom-style: groove;
+    border-top-style: ridge;
+}
+
+.light:hover{
+    border: none,5px,rgba(37, 83, 62,0.8);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom-style: groove;
+    border-top-style: ridge;
+}
