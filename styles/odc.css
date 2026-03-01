@@ -390,9 +390,12 @@ footer{
     text-align: center;
     margin-bottom:3%;
     font-size: 25px;
-    font-family:cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     margin: auto;
+    justify-self: center;
+    left: 0;
+    right: 0;
 }
 .drop{
     background-color: rgb(240, 255, 240, 0.95);
@@ -434,7 +437,7 @@ footer{
     text-align: center;
     margin-bottom: 3%;
     font-size: 25px;
-    font-family:cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     max-width: 512px;
     width: 90vw;
@@ -558,7 +561,7 @@ td.calendar{
     width: fit-content;
     padding: 5px;
     background-color: rgb(33, 60, 50, 0.95);
-    font-family:cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 140%;
     color: ivory;
     text-align: center;
@@ -725,3 +728,4 @@ td.calendar{
         display: inline;
     }
 }
+
