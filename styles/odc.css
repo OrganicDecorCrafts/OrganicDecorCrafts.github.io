@@ -171,6 +171,9 @@ html, body  {
     text-decoration: inherit;
     display: block;
     text-align: center;
+    justify-self: center;
+    left: 0;
+    right: 0;
 }
 .teleport:hover{
     text-decoration: overline;
@@ -576,6 +579,9 @@ td.calendar{
     border-style: double;
     height: fit-content;
     text-overflow:ellipsis;
+    justify-self: center;
+    left: 0;
+    right: 0;
 }
 .notice:hover{
     cursor: pointer;
@@ -735,6 +741,7 @@ td.calendar{
         display: inline;
     }
 }
+
 
 
 
