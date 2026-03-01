@@ -4,95 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/odc.css" type="text/css">
-    <title>Top- Organic Decor & Crafts</title>
+    <link rel="icon" href="img/odc-icon.png">
+    <title>Gallery - Organic Décor & Crafts</title>
 </head>
+
 <body>
-    <div><img class="topphoto" src="img/topphoto1.png"></div>
+    <div><img class="topphoto" src="img/topphoto-mountain.jpg"></div>
     <div class="topbar">
         <details class="sidebar">
             <summary class="bigger"></summary>
             <div class="bar">
-                <p><button class="sidebutton" onclick="document.location='decor-odc.html'">Custom Décor Commissions</button></p>
-                <p><button class="sidebutton" onclick="document.location='music-odc.html'">Original Music Commissions</button></p>
-                <p><button class="sidebutton" onclick="document.location='pcs-odc.html'">Profile Cards Society</button></p>
-                <p><button class="sidebutton" onclick="document.location='faq-odc.html'">Frequently-Asked Questions</button></p>
-                <p><button class="sidebutton" onclick="document.location='gallery-odc.html'">Gallery of Various Works</button></p>
-                <p><button class="sidebutton" onclick="document.location='crafts-odc.html'">Crafts, Seasonal & All-Year</button></p>
-                <p><button class="sidebutton" onclick="document.location='services-odc.html'">Services Locally Offered</button></p>
-                <p><button class="sidebutton" onclick="document.location='about-odc.html'">About Our Goals & Purposes</button></p>
+                <details open name="bar" class="sidebutton"><p><summary>Workshop Information</summary></p>
+                    <button id="subside" class="sidebutton" onclick="document.location='gallery-odc.html'"><u>Gallery of Various Works</u></button>
+                    <button id="subside" class="sidebutton" onclick="document.location='about-odc.html'">About Our Goals & Ideas</button>
+                    <button id="subside" class="sidebutton" onclick="document.location='faq-odc.html'">FAQ & Privacy Policy</button>
+                </details>
+                <details name="bar" class="sidebutton"><p><summary>Shopping & Custom Orders</summary></p>
+                    <button id="subside" class="sidebutton" onclick="document.location='crafts-odc.html'">Crafts & Custom Décor</button>
+                    <button id="subside" class="sidebutton" onclick="document.location='services-odc.html'">Services Locally Offered</button>
+                    <button id="subside" class="sidebutton" onclick="document.location='music-odc.html'">Music Commissions</button>
+                </details>
+                <details name="bar" class="sidebutton"><p><summary>Profile Cards Society</summary></p>
+                    <button id="subside" class="sidebutton" class onclick="document.location='pcs-odc.html'">About the Organization</button>
+                    <button id="subside" class="sidebutton" class onclick="document.location='pcs-odc.html'">Original Card Games</button>
+                </details>
             </div>
         </details>
-        <button class="homebutton" onclick="document.location='index.html'"><img class="smaller" src="img/logo4.png" type="img" alt="logo"></img></button>
-        <button class="upbutton" onclick="window.scrollTo(0,0)">Gallery</button>
         <img class="sidelogo" src="img/sidebutton2.png" type="img" alt="more"></img></div>    
     </div>
     <div>
+        <button class="quickbutton" onclick="document.location='index.html'">Home</button>
         <button class="quickbutton" onclick="document.location='crafts-odc.html'">Crafts</button>
-        <button class="quickbutton" onclick="document.location='services-odc.html'">Services</button>
+        <button class="quickbutton" onclick="document.location='services-odc.html'">Service</button>
         <button class="quickbutton" onclick="document.location='about-odc.html'">About</button>
-        <button class="quickbutton" onclick="document.location='pcs-odc.html'">PCS</button>
+        <button class="quickbutton" id="quickwide" onclick="document.location='music-odc.html'">Music</button>
+        <button class="quickbutton" id="quickwide" onclick="document.location='pcs-odc.html'">P.C.S.</button>
+        <button class="quickbutton" id="quickwide" onclick="document.location='faq-odc.html'">FAQ</button>
     </div>
+    <div class="allmenu">
+        <button class="allmenu" id="m1" onclick="document.location='gallery-odc.html'"><u>Gallery of Various Works</u></button>
+        <button class="allmenu" id="m2" onclick="document.location='crafts-odc.html'">Crafts & Custom Décor</button>
+        <button class="allmenu" id="m3" onclick="document.location='services-odc.html'">Services Locally Offered</button>
+        <button class="allmenu" id="m4" onclick="document.location='about-odc.html'">About Our Goals & Ideas</button>
+        <button class="allmenu" id="m5" onclick="document.location='music-odc.html'">Original Music Commissions</button>
+        <button class="allmenu" id="m6" onclick="document.location='faq-odc.html'">FAQ & Privacy Policy</button>
+        <button class="allmenu" id="m7" onclick="document.location='pcs-odc.html'">Profile Cards Society</button>
+        <button class="allmenu" id="m8" onclick="document.location='cg-odc.html'">P.C.S. Original Card Games</button>
+    </div>
+    <button class="fixedhomebutton" onclick="document.location='index.html'"><img class="smaller" src="img/logo4.png" type="img" alt="logo"></img></button>
+    <button class="upbutton" onclick="window.scrollTo(0,0)">Gallery</button>
     
     <div class="bigcap">
         <h2>Gallery of Various Works</h2>
+        <h5>at Organic Décor & Crafts Co.</h5>
+        <hr>
     </div>
-    <button class="light">
-        <h4>Brief Description of Gallery and its purpose</h4>
-        <img width="100%" src="img/horizontal_content.jpg">
+    <button class="clear">
+        <h2>What is this for?</h2>
+        <h4>This is a diverse library archiving notable local contributions of this dainty workshop in various artistic and natural mediums over the years. Consider this gallery a museum of past works to find shared common grounds within the social and moral values between ourselves.</h4>
     </button>
-    <br>
-    <details class="bigcap">
-        <summary class="drop">Crafts/Décor</summary>
-        <button class="dark" onclick="document.location='decor-odc.html'">
-            <h4>Order a Fully-Custom Handcrafted Decor Today!</h4>
-            <img width="100%" src="img/horizontal_content.jpg">
+    <button class="dark">
+        <b><i>FEATURED TODAY :</i></b>
+    </button>
+    <button class="dark">
+        <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+        <h4>Name of item</h4>
+        <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+    </button>
+    <button class="white">
+        <b><i>GALLERY BY CATEGORY :</i></b>
+    </button>
+    <details class="dropcap">
+        <summary class="drop">Handcrafts & Décor</summary>
+        <button class="light">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+        </button>
+        <button class="dark">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
         </button>
     </details>
-    <details class="bigcap">
-        <summary class="drop">Local Services</summary>
-        <button class="dark" onclick="document.location='decor-odc.html'">
-            <h4>Order a Fully-Custom Handcrafted Decor Today!</h4>
-            <img width="100%" src="img/horizontal_content.jpg">
+    <details class="dropcap">
+        <summary class="drop">Original Music Library</summary>
+        <button class="light">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+        </button>
+        <button class="dark">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
         </button>
     </details>
-    <details class="bigcap">
-        <summary class="drop">Original Music</summary>
-        <button class="dark" onclick="document.location='decor-odc.html'">
-            <h4>Order a Fully-Custom Handcrafted Decor Today!</h4>
-            <img width="100%" src="img/horizontal_content.jpg">
+    <details class="dropcap">
+        <summary class="drop">Stories, Poems, Lyrics</summary>
+        <button class="light">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+        </button>
+        <button class="dark">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
         </button>
     </details>
-    <details class="bigcap">
-        <summary class="drop">Photo Collection</summary>
-        <button class="dark" onclick="document.location='decor-odc.html'">
-            <h4>Order a Fully-Custom Handcrafted Decor Today!</h4>
-            <img width="100%" src="img/horizontal_content.jpg">
+    <details class="dropcap">
+        <summary class="drop">Useful Tools & Games</summary>
+        <button class="light">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+        </button>
+        <button class="dark">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
         </button>
     </details>
-    <details class="bigcap">
-        <summary class="drop">Tools & Games</summary>
-        <button class="dark" onclick="document.location='decor-odc.html'">
-            <h4>Order a Fully-Custom Handcrafted Decor Today!</h4>
-            <img width="100%" src="img/horizontal_content.jpg">
+    <details class="dropcap">
+        <summary class="drop">Inspiring Photography</summary>
+        <button class="light">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
+        </button>
+        <button class="dark">
+            <img class="photo" id="fullview" src="img/horizontal_content.jpg">
+            <h4>Name of item</h4>
+            <p>Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt animi cumque fugit, perferendis voluptate quas recusandae cupiditate facere delectus enim harum reiciendis sit? Consequuntur omnis itaque laborum magni provident fugit?</p>
         </button>
     </details>
 </body>
-<footer>
-    <h3>Follow Us Online at:</h3>
-    <p>
-        <a class="logo" href="https://www.instagram.com/intothewood.sailor/"><img width="35px" src="img/Instagram-Logo-white.png"></a>
-        <a class="logo" href="mailto:intothewood.sailor@gmail.com"><img width="35px" src="img/gmail-circled-white.png"></a>
-        <a class="logo" href="https://www.noteflight.com/profile/5326de3cf3f3b2a48905fb26843b346cb8f94619"><img width="35px" src="img/noteflight-logo.png"></a>
-        <a class="logo" href="https://www.quotev.com/Intothewood52289"><img width="35px" src="img/quotev_white.webp"></a>
-    </p>
-    <br>
-    <button class="sidebutton" onclick="document.location='faq-odc.html'">FAQ</button>
-    <button class="sidebutton" onclick="document.location='about-odc.html'">Terms & Privacy</button>
-    <br><br>
-    <hr color="">
-    <br>
-    <button class="homebutton" onclick="document.location='index.html'"><img src="img/logo4.png" width="200px"></button>
-    <p>Copyright © 2025 Organic Décor & Crafts Co.</p>
-    <p>All Rights Reserved.</p>
-</footer>
+    <footer>
+        <button class="teleport" onclick="window.scrollTo(0,0)"><h2>▲ Back to Top</h2></button>
+        <h3>Follow Us Online at:</h3>
+        <p>
+            <a class="logo" href="https://www.instagram.com/intothewood.sailor/"><img width="35px" src="img/Instagram-Logo-white.png"></a>
+            <a class="logo" href="mailto:intothewood.sailor@gmail.com"><img width="35px" src="img/gmail-circled-white.png"></a>
+            <a class="logo" href="https://www.noteflight.com/profile/5326de3cf3f3b2a48905fb26843b346cb8f94619"><img width="35px" src="img/noteflight-logo.png"></a>
+            <a class="logo" href="https://www.quotev.com/Intothewood52289"><img width="35px" src="img/quotev_white.webp"></a>
+            <a class="logo" href="https://www.linkedin.com/in/intothewood-sailor-7990583a7"><img width="33px" src="img/linkedin-icon-square-white.png"></a>        
+        </p>
+        <br>
+        <a color="ivory" onclick="document.location='faq-odc.html'"><i>FAQ & Privacy Policy</i></a>
+        <br><br>
+        <hr color="">
+        <br>
+        <button class="homebutton" onclick="document.location='index.html'"><img src="img/logo4.png" width="200px"></button>
+        <p>Copyright © 2026 Organic Décor & Crafts Co.</p>
+        <p>All Rights Reserved.</p>
+    </footer>
 </html>
