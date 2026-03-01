@@ -131,7 +131,7 @@ html, body  {
     padding-left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-top: 2.5px;
+    margin-top: 0px;
     line-height: 50%;
     border: 0px,rgb(33, 60, 50), solid;
     /*border-left-width: 3px;*/
@@ -734,6 +734,7 @@ td.calendar{
         display: inline;
     }
 }
+
 
 
 
