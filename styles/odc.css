@@ -107,7 +107,7 @@ html, body  {
     height: 49px;
     color: rgb(33, 60, 50);
     border: 3px,rgb(60, 132, 100),solid;
-    /*border-bottom-color: rgb(33, 60, 50);*/
+    border-bottom-color: rgb(33, 60, 50);
     justify-self: center;
     z-index: 1;
 }
@@ -116,7 +116,7 @@ html, body  {
     position:fixed;
     right: 0px;
     z-index: 2;
-    top:3px;
+    top:0px;
     margin-right: 0px;
 }
 
@@ -134,7 +134,7 @@ html, body  {
     margin-top: 3.1px;
     line-height: 50%;
     border: 0px,rgb(33, 60, 50), solid;
-    /*border-left-width: 3px;*/
+    border-left-width: 3px;
     border-bottom-width: 3px;
     height: 100vh;
     /*height: 260px;*/
@@ -734,6 +734,7 @@ td.calendar{
         display: inline;
     }
 }
+
 
 
 
