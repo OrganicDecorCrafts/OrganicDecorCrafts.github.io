@@ -1,91 +1,141 @@
-
-@media screen and (min-width: 512px){
-    
-}
-
-.center{
-    display: block;
-    justify-self: center;
+body{
+    background-color: black;
 }
 
 a{
-    color: rgb(33, 60, 50);
+    color: inherit;
     padding: 0%;
     text-decoration: none;
 }
-
 a::selection{
-    color: rgb(33, 60, 50);
+    color: initial;
 }
-
 a:hover{
-    color: rgb(33, 60, 50);
+    color: inherit;
     text-decoration: underline;
+    cursor:pointer;
 }
 
 .logo{
     margin: 3%;
+    width: unset;
 }
-
 .logo:hover{
     zoom: 94%;
     margin-left: 3.2%;
     margin-right: 3.2%;
 }
+.logo:active{
+    cursor:wait;
+}
 
-.topphoto{
-    position:fixed;
-    top: 0%;
-    left: 0%;
+.photo{
     width: 100%;
+    display: block;
+    justify-self: center;
+}
+#vimg{
+    width: unset;
+    height: 25rem;
+    min-height: 502px;
+}
+
+#fullview:active{
+    position: sticky;
+    top: 66px;
+    right: 0%;
+    width: unset;
+    height: unset;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 3;
+    justify-self: center;
+}
+
+/*
+.topphot{
+    position:fixed;
+    min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    top: 0%;
+    right: 0%;
+    z-index: -2;
+    opacity: 85%;
+}
+*/
+
+html, body  {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    @starting-style{
+        margin-top: 100vh;
+    }
+}
+.topphoto{
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+    opacity:85%;
+        transition: 1s;
+    @starting-style{
+        opacity:45%;
+    }
 }
 
 .topbar{
-    display: block;
-    position:sticky;
-    top: 0%;
+    position:fixed;
+    top:0px;
+    width: 100%;
     padding-top: 8px;
     padding-bottom: 4px;
     text-align: left;
     background-color:rgb(60, 132, 100);
-    width: 100%;
     z-index: 0;
     font-size: 38px;
-    opacity: 95%;
+    height: 49px;
     color: rgb(33, 60, 50);
     border: 3px,rgb(60, 132, 100),solid;
-    border-left-color: rgb(33, 60, 50);
-    border-right-color: rgb(33, 60, 50);
+    border-bottom-color: rgb(33, 60, 50);
     justify-self: center;
+    z-index: 1;
 }
 
 .sidebar{
     position:fixed;
     right: 0px;
-    z-index: 1;
-    top:4px;
+    z-index: 2;
+    top:7px;
+    margin-right: 0px;
 }
 
 .bar{
     background-color:rgb(60, 132, 100);
-    right: 1%;
-    z-index: 1;
-    padding: 5px;
     color: ivory;
     font-size: 20px;
     width: max-content;
-    text-align: right;
-    margin-right:10px;
-    padding-right: 8px;
+    text-align: left;
+    margin-right:0px;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-top: 1px;
+    margin-top: 3.1px;
     line-height: 50%;
-    opacity: 105%;
-    border: 0px,rgb(33, 60, 50),double;
+    border: 0px,rgb(33, 60, 50), solid;
+    border-left-width: 3px;
     border-bottom-width: 3px;
+    height: 100vh;
+    /*height: 260px;*/
 }
 
 .bigger{
@@ -94,6 +144,7 @@ a:hover{
     font-size: 43px;
     margin-top:2.5%;
     margin-right:18px;
+    cursor:pointer;
 }
 
 .smaller{
@@ -102,10 +153,28 @@ a:hover{
 }
 
 .sidelogo{
-    position: absolute;
-    right:8px;
+    position: fixed;
+    right:16px;
     height: 30px;
-    margin-top:5px;
+    margin-top:6px;
+}
+
+.teleport{
+    background: none;
+    border-style: hidden;
+    color: ivory;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    display: block;
+    justify-self: center;
+}
+.teleport:hover{
+    text-decoration: overline;
+    cursor:pointer;
+}
+.teleport:active{
+    color: rgb(129, 192, 164);
 }
 
 .upbutton{
@@ -114,47 +183,86 @@ a:hover{
     color: inherit;
     font-size: inherit;
     font-family: inherit;
+    position: fixed;        
+    top: 8px;
+    left: 120px;
+    font-size: 39px;
+    color: rgb(33, 60, 50); 
+    z-index: 1;
+    transition: 0.5s;
+    @starting-style{
+        top: -100vh;
+    }
 }
-
 .upbutton:hover{
     text-decoration: overline;
+    cursor:pointer;
+}
+.upbutton:active{
+    color: rgb(37, 83, 62);
 }
 
 .homebutton{
     background: none;
     border-style: hidden;
+    margin-bottom: -10px;
+    zoom: 110%;
 }
-
 .homebutton:hover{
     opacity: 80%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.fixedhomebutton{
+    background: none;
+    border-style: hidden;
+    margin-bottom: -10px;
+    zoom: 125%;
+    position: fixed;
+    top: 7px;
+    left: -3px;
+    z-index: 1;
+}
+.fixedhomebutton:hover{
+    opacity: 80%;
+    cursor:pointer;
+    transition: 0.5s;
 }
 
 .quickbutton{
-    background-color: rgb(60, 132, 100, 0.95);
+    /*background-color: rgb(60, 132, 100);*/
+    background-color: transparent;
     border-style: hidden;
     text-decoration: overline;
     color:ivory;
     font-size: clamp(22px,6vw,26px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 1vh;
-    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-top: 7px;
     width: 24%;
-    margin-right: -4.1px;
-    margin-bottom: 1vh;
+    margin-bottom: 7px;
+    margin-top: 66px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-weight: bold;
+    text-shadow: 1px 0px 4px black;
 }
-
 .quickbutton:hover{
     background-color: rgb(60, 132, 100, 0.75);
     text-decoration:none;
-    margin-bottom: 0;
-    padding-bottom: 2vh;
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-
 .quickbutton:active{
     color:rgb(129, 192, 164);
+    font-weight: normal;
+}
+#quickwide{
+    display: none;
 }
 
 .sidebutton{
@@ -164,49 +272,148 @@ a:hover{
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
-    margin-left: 12px;
-    margin-bottom: 1px;
+    display: block;
 }
-
-.sidebutton:hover{
+button.sidebutton:hover{
     text-decoration: underline;
+    text-decoration-color: rgb(129, 192, 164);
+    cursor: pointer;
+    /*
+    margin-left: 6.5px;
+    margin-right: 5px;
+    font-size: 23px;
+    margin-bottom: 0.5px;
+    */
+}
+button.sidebutton:active{
+    text-decoration: none;
     color: rgb(129, 192, 164);
 }
 
-.sidebutton:active{
-    margin-left: 0px;
-    font-size: 25px;
-    margin-bottom: 0px;
+details.sidebutton{
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-style: normal;
+}
+details.sidebutton:hover{
+    text-shadow: black 1px 1px 5px;
+    cursor: pointer;
+}
+
+#subside{
+    text-decoration-color: transparent;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+#subside:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(129, 192, 164);
+    cursor: pointer;
+}
+
+div.allmenu{
+    position:fixed;
+    background-color:rgb(60, 132, 100);
+    left: 0px;
+    width: 320px;
+    height:100vh;
+    visibility: hidden;
+    top: 0px;
+    border: 3px,rgb(33, 60, 50) solid;
+    border-top: none;
+    border-left: none;
+}
+
+button.allmenu{
+    background: none;
+    border-style: hidden;
+    color: ivory;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    left: 10px;
+    position:fixed;
+    z-index: -1;
+    visibility: hidden;
+}
+button.allmenu:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(129, 192, 164);;
+    cursor: pointer;
+}
+button.allmenu:active{
+    text-decoration: none;
+    color: rgb(129, 192, 164);
+}
+#m1{
+    top: 70px;
+}
+#m2{
+    top: 110px;
+}
+#m3{
+    top: 150px;
+}
+#m4{
+    top: 190px;
+}
+#m5{
+    top: 230px;
+}
+#m6{
+    top: 270px;
+}
+#m7{
+    top: 310px;
+}
+#m8{
+    top: 350px;
 }
 
 footer{
     background-color: rgb(33, 60, 50);
-    width: 96%;
+    width: 100%;
+    max-width: 512px;
+    justify-self: center;
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(129, 192, 164);
     text-align: center;
-    padding:2%;
-    margin-top: 2%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: -10px;
 }
 
+.dropcap{
+    text-align: center;
+    margin-bottom:3%;
+    font-size: 25px;
+    font-family:cursive;
+    font-style: italic;
+    margin: auto;
+}
 .drop{
-    background-color: ivory;
+    background-color: rgb(240, 255, 240, 0.95);
     color: rgb(33, 60, 50);
-    padding: 1%;
-    width: clamp(250px,75%,400px);
+    /*width: clamp(322px,75%,400px);*/
+    width:95.5%;
+    display: block;
+    min-width:0px;
+    max-width: 496px;
     justify-self: center;
     font-weight: bold;
-    z-index: -1;
     font-size: 24px;
-    margin: 1%;
+    padding: 8px;
+    border-top: 3px double rgb(33, 60, 50);
+    opacity: 95%;
 }
-
 .drop:hover{
-    width: clamp(275px,85%,450px);
+    /*width: clamp(275px,85%,450px);*/
     text-decoration: overline;
+    cursor:pointer;
 }
-
 .drop:active{
     color: rgb(60, 132, 100);
 }
@@ -217,15 +424,20 @@ footer{
     margin-bottom: 3%;
     justify-content:center;
 }
+.biglogo:hover{
+    cursor:help;
+}
 
 .bigcap{
-    color:ivory;
+    color:whitesmoke;
+    text-shadow: 1px 1px 20px black;
     text-align: center;
     margin-bottom: 3%;
     font-size: 25px;
     font-family:cursive;
     font-style: italic;
     max-width: 512px;
+    width: 90vw;
     margin: auto;
 }
 
@@ -233,57 +445,81 @@ table{
     text-align: center;
     width: 100%;
 }
-
 th{
     font-style:italic;
 }
-
 td{
     font-weight:bold;
     padding-top: 3px;
     padding-left: 3px;
 }
 
+table.calendar{
+    border-top: 3px rgb(37, 83, 62) double;
+}
+th.calendar{
+    font-weight:normal;
+    text-align: left;
+    font-style:normal;
+    border-bottom: 3px rgb(37, 83, 62) double;
+    padding: 5px;
+    padding-right: 3px;
+}
+td.calendar{
+    padding: 5px;
+    padding-right: 10px;
+    font-size: larger;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.white, .dark, .light, .clear{
+    border-style: hidden;
+    display: block;
+    justify-self: center;
+    width: 100%;
+    max-width: 512px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: left;
+    z-index: 1;
+    opacity: 95%;
+}
 .white{
-    border-style: hidden;
-    display: block;
-    justify-self: center;
-    max-width: 512px;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(240, 255, 240, 0.95);
+    background-color: rgb(240, 255, 240);
     color: rgb(37, 83, 62);
-    margin: 1%;
-    font-size: 20px;
-    text-align: left;
 }
-
 .dark{
-    border-style: hidden;
-    display: block;
-    justify-self: center;
-    max-width: 512px;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(37, 83, 62, 0.95);
+    background-color: rgb(37, 83, 62);
     color: ivory;
-    margin: 1%;
-    font-size: 20px;
-    text-align: left;
+}
+.light{
+    background-color: rgb(129, 192, 164);
+    color: rgb(33, 60, 50);
+}
+.clear{
+    background-color: rgb(33, 60, 50, 0.25);
+    mix-blend-mode:luminosity;
+    color: ivory;
+    text-shadow: 3px 3px 5px rgb(33, 60, 50, 0.37);
 }
 
-.light{
-    border-style: hidden;
-    display: block;
-    justify-self: center;
-    max-width: 512px;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(129, 192, 164, 0.95);
-    color: rgb(33, 60, 50);
-    margin: 1%;
-    font-size: 20px;
-    text-align: left;
+.white:hover, .dark:hover, .light:hover{
+    opacity: 1.0;
+}
+.clear:hover{
+    background-color: rgb(33, 60, 50, 0.4);
+}
+
+.white:active{
+    text-shadow: 1px 1px 10px rgb(129, 192, 164);
+}
+.dark:active, .light:active{
+    text-shadow: 1px 1px 10px rgb(60, 132, 100);
+}
+.clear:active{
+    color: whitesmoke;
 }
 
 .order{
@@ -294,53 +530,198 @@ td{
     min-width: fit-content;
     font-family:cursive;
     font-size: 30px;
-    position: sticky;
+    position: fixed;
     bottom: 1%;
-    padding: 2%;
-    margin: 0%;
+    padding: 1%;
     float: left;
-    right: 5%;
+    left: 3%;
     border: 3px, dashed, rgb(33, 60, 50);
-    opacity: 95%;
+    opacity: 90%;
+    transition: 0.5s;
+    @starting-style{
+        translate:-100vw 0;
+    }
 }
-
 .order:hover{
-    opacity: 100%;
+    opacity: 95%;
     font-size: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.order:active{
+    color: rgb(33, 60, 50);
 }
 
-.white:active{
-    background-color:rgba(240, 255, 240, 0.8);
+.notice{
+    justify-self:center;
+    max-width: 492px;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(33, 60, 50, 0.95);
+    font-family:cursive;
+    font-size: 140%;
+    color: ivory;
+    text-align: center;
+    border: 5px,rgb(37, 83, 62, 0.95);
+    border-style: double;
+    height: fit-content;
+    text-overflow:ellipsis;
+}
+.notice:hover{
+    cursor: pointer;
 }
 
-.dark:active{
-    background-color:rgba(37, 83, 62,0.8);
+/*
+@media screen and (min-height: 720px) and (max-width:512px){
+    .dropcap{
+        position: sticky;
+        top: 65px;
+    }
+
+    .white{
+        position: sticky;
+        top: 65px;
+    }
+    .dark{
+        position: sticky;
+        top: 65px;
+    }
+    .light{
+        position: sticky;
+        top: 65px;
+    }
+    .clear{
+        position: sticky;
+        top: 65px;
+    }
+    .footer{
+        position: sticky;
+        top: 65px;
+    }
+}
+*/
+
+@media screen and (min-width: 666px) and (max-width: 896px){
+    .quickbutton{
+        width: 13.7%;
+    }
+    #quickwide{
+        display: inline;
+    }
+}
+@media screen and (min-width: 896px) and (max-height: 389px){
+    .quickbutton{
+        width: 13.7%;
+    }
+    #quickwide{
+        display: inline;
+    }
 }
 
-.light:active{
-    background-color: rgb(129, 192, 164,0.8);
+@media screen and (min-width: 896px) and (min-height:390px){
+    #fullview:active{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: unset;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    z-index: 3;
+    justify-self: right;
+    }
+    
+    body{
+        max-width: 60%;
+       justify-self: center;
+       margin-left: 325px;
+    }
+
+    .upbutton{
+        z-index: 0;
+    }
+    
+    div.allmenu{
+        visibility: visible;
+    }
+    button.allmenu{
+        visibility: visible;
+    }
+
+    .bar{
+        visibility: hidden;
+    }
+    .sidebar{
+        visibility: hidden;
+    }
+    .bigger{
+        visibility: hidden;
+    }
+
+    .topbar{
+        visibility: collapse;
+    }
+
+    .quickbutton{
+        margin-top: 0px;
+    }
+
+    .order{
+        right: 3%;
+        left: unset;
+    }
 }
 
-.white:hover{
-    border: none,5px,rgb(129, 192, 164,0.8);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom-style: groove;
-    border-top-style: ridge;
+@media screen and (min-width: 1100px) and (min-height: 390px){
+    .photo{
+        width: 492px;
+        max-width: none;
+    }
+    .drop{
+        width: 714px;
+        max-width: none;
+    }
+    footer, .white, .dark, .light, .clear{
+        width: 730px;
+        max-width: none;
+    }
+    .quickbutton{
+        width: 13.7%;
+    }
+    #quickwide{
+        display: inline;
+    }
 }
-
-.dark:hover{
-    border: none,5px,rgb(33, 60, 50);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom-style: groove;
-    border-top-style: ridge;
+@media screen and (min-width: 1300px) and (min-height: 560px){
+    .drop{
+        width: 916px;
+        max-width: none;
+    }
+    footer, .white, .dark, .light, .clear{
+        width: 932px;
+        max-width: none;
+    }
+    .quickbutton{
+        width: 13.7%;
+    }
+    #quickwide{
+        display: inline;
+    }
 }
-
-.light:hover{
-    border: none,5px,rgba(37, 83, 62,0.8);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom-style: groove;
-    border-top-style: ridge;
+@media screen and (min-width: 1500px) and (min-height: 660px){
+    .drop{
+        width: 1116px;
+        max-width: none;
+    }
+    footer, .white, .dark, .light, .clear{
+        width: 1132px;
+        max-width: none;
+    }
+    .quickbutton{
+        width: 13.7%;
+    }
+    #quickwide{
+        display: inline;
+    }
 }
