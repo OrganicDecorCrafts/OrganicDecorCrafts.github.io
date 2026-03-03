@@ -36,6 +36,8 @@ a:hover{
     width: 100%;
     display: block;
     align-self: center;
+    text-align: center;
+    justify-content: center;
 }
 #vimg{
     width: unset;
@@ -740,3 +742,4 @@ td.calendar{
         display: inline;
     }
 }
+
