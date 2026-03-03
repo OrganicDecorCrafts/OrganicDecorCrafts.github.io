@@ -400,14 +400,13 @@ footer{
     font-style: italic;
     margin: auto;
     justify-self: center;
-    width:100vw;
-    max-width: 496px;
+    width:100%;
 }
 .drop{
     background-color: rgb(240, 255, 240, 0.95);
     color: rgb(33, 60, 50);
     /*width: clamp(322px,75%,400px);*/
-    width:100vw;
+    width:100%;
     max-width: 496x;
     display: block;
     max-width: 496px;
@@ -739,6 +738,7 @@ td.calendar{
         display: inline;
     }
 }
+
 
 
 
