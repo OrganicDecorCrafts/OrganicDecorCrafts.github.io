@@ -35,9 +35,7 @@ a:hover{
 .photo{
     width: 100%;
     display: block;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
+    justify-self: center;
 }
 #vimg{
     width: unset;
@@ -742,4 +740,5 @@ td.calendar{
         display: inline;
     }
 }
+
 
