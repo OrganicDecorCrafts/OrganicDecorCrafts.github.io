@@ -13,7 +13,7 @@ a::selection{
 }
 a:hover{
     color: inherit;
-    text-decoration: underline;
+    filter: brightness(85%);
     cursor:pointer;
 }
 
@@ -736,6 +736,7 @@ td.calendar{
         display: inline;
     }
 }
+
 
 
 
