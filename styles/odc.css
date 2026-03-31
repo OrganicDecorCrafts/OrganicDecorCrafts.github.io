@@ -488,6 +488,10 @@ td.calendar{
     font-weight: normal;
 }
 
+#point{
+    cursor: pointer;
+}
+
 .white, .dark, .light, .clear{
     border-style: none;
     display: block;
@@ -584,9 +588,6 @@ td.calendar{
     justify-self: center;
     left: 0;
     right: 0;
-}
-.notice:hover{
-    cursor: pointer;
 }
 
 /*
