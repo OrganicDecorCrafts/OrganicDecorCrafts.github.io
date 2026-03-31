@@ -41,7 +41,7 @@ a:hover{
 }
 #vimg{
     height: auto;
-    max-height: 80vh;
+    max-height: 480px;
     max-width: 100%;
     width: auto;
 }
