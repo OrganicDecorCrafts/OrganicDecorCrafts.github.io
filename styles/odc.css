@@ -177,6 +177,7 @@ html, body  {
     text-align: center;
     justify-self: center;
     right: 0;
+    display: block;
 }
 .teleport:hover{
     text-decoration: overline;
